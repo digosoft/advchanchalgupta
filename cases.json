@@ -1,0 +1,142 @@
+[
+  {
+    "parties": "Reena Kumari vs. Sonu",
+    "court": "Chief Judicial Magistrate",
+    "judge": "Hon'ble Judicial Magistrate Court No. 03",
+    "caseType": "Company Petition",
+    "caseDetails": "Indian Penal Code - 498a,323,147,504,506"
+  },
+  {
+    "parties": "Amit Sharma vs. State",
+    "court": "District Court",
+    "judge": "Hon'ble District Judge",
+    "caseType": "Criminal Appeal",
+    "caseDetails": "IPC 307, 324"
+  },
+  {
+    "parties": "Sunita Devi vs. Rajesh",
+    "court": "Family Court",
+    "judge": "Hon'ble Family Court Judge",
+    "caseType": "Divorce Petition",
+    "caseDetails": "Hindu Marriage Act - 13"
+  },
+  {
+    "parties": "Ravi Kumar vs. Suman",
+    "court": "Civil Court",
+    "judge": "Hon'ble Civil Judge",
+    "caseType": "Property Dispute",
+    "caseDetails": "Transfer of Property Act"
+  },
+  {
+    "parties": "Priya Singh vs. Anil",
+    "court": "Chief Judicial Magistrate",
+    "judge": "Hon'ble Judicial Magistrate Court No. 01",
+    "caseType": "Maintenance Case",
+    "caseDetails": "CrPC 125"
+  },
+  {
+    "parties": "Deepak Joshi vs. State",
+    "court": "Sessions Court",
+    "judge": "Hon'ble Sessions Judge",
+    "caseType": "Bail Application",
+    "caseDetails": "NDPS Act"
+  },
+  {
+    "parties": "Kavita vs. Manoj",
+    "court": "Family Court",
+    "judge": "Hon'ble Family Court Judge",
+    "caseType": "Child Custody",
+    "caseDetails": "Guardians and Wards Act"
+  },
+  {
+    "parties": "Suresh Chandra vs. State",
+    "court": "High Court",
+    "judge": "Hon'ble High Court Judge",
+    "caseType": "Writ Petition",
+    "caseDetails": "Article 226"
+  },
+  {
+    "parties": "Meena Kumari vs. Rakesh",
+    "court": "District Court",
+    "judge": "Hon'ble District Judge",
+    "caseType": "Domestic Violence",
+    "caseDetails": "Protection of Women from Domestic Violence Act"
+  },
+  {
+    "parties": "Vikas vs. State",
+    "court": "Sessions Court",
+    "judge": "Hon'ble Sessions Judge",
+    "caseType": "Criminal Revision",
+    "caseDetails": "IPC 379, 411"
+  },
+  {
+    "parties": "Anita vs. Sandeep",
+    "court": "Family Court",
+    "judge": "Hon'ble Family Court Judge",
+    "caseType": "Restitution of Conjugal Rights",
+    "caseDetails": "Hindu Marriage Act - 9"
+  },
+  {
+    "parties": "Rohit vs. State",
+    "court": "District Court",
+    "judge": "Hon'ble District Judge",
+    "caseType": "Cheque Bounce",
+    "caseDetails": "NI Act 138"
+  },
+  {
+    "parties": "Pooja vs. Ramesh",
+    "court": "Family Court",
+    "judge": "Hon'ble Family Court Judge",
+    "caseType": "Alimony",
+    "caseDetails": "Hindu Marriage Act - 25"
+  },
+  {
+    "parties": "Sanjay vs. State",
+    "court": "Sessions Court",
+    "judge": "Hon'ble Sessions Judge",
+    "caseType": "Criminal Appeal",
+    "caseDetails": "IPC 302"
+  },
+  {
+    "parties": "Neha vs. Ajay",
+    "court": "Civil Court",
+    "judge": "Hon'ble Civil Judge",
+    "caseType": "Partition Suit",
+    "caseDetails": "Partition Act"
+  },
+  {
+    "parties": "Manoj vs. State",
+    "court": "High Court",
+    "judge": "Hon'ble High Court Judge",
+    "caseType": "Public Interest Litigation",
+    "caseDetails": "Article 32"
+  },
+  {
+    "parties": "Ritu vs. Saurabh",
+    "court": "Family Court",
+    "judge": "Hon'ble Family Court Judge",
+    "caseType": "Child Adoption",
+    "caseDetails": "Juvenile Justice Act"
+  },
+  {
+    "parties": "Arun vs. State",
+    "court": "District Court",
+    "judge": "Hon'ble District Judge",
+    "caseType": "Land Dispute",
+    "caseDetails": "Land Revenue Act"
+  },
+  {
+    "parties": "Seema vs. Mahesh",
+    "court": "Family Court",
+    "judge": "Hon'ble Family Court Judge",
+    "caseType": "Dowry Harassment",
+    "caseDetails": "Dowry Prohibition Act"
+  },
+  {
+    "parties": "Vivek vs. State",
+    "court": "Sessions Court",
+    "judge": "Hon'ble Sessions Judge",
+    "caseType": "Attempt to Murder",
+    "caseDetails": "IPC 307"
+  }
+]
