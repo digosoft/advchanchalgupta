@@ -1,142 +1,162 @@
 [
   {
-    "parties": "Reena Kumari vs. Sonu",
-    "court": "Chief Judicial Magistrate",
-    "judge": "Hon'ble Judicial Magistrate Court No. 03",
-    "caseType": "Company Petition",
-    "caseDetails": "Indian Penal Code - 498a,323,147,504,506"
+    "parties": "Xxxxxxx Vs. Xxxxxxx",
+    "court": "Family Court Khatima",
+    "judge": "Hon'ble Additional Principal Judge",
+    "caseType": "Miscellaneous Application (Civil)",
+    "caseStatus": "Disposed",
+    "caseDetails": "-"
   },
   {
-    "parties": "Amit Sharma vs. State",
-    "court": "District Court",
-    "judge": "Hon'ble District Judge",
-    "caseType": "Criminal Appeal",
-    "caseDetails": "IPC 307, 324"
+    "parties": "Xxxxxxx Vs. Xxxxxxx",
+    "court": "Family Court Khatima",
+    "judge": "Hon'ble Additional Principal Judge",
+    "caseType": "Criminal Miscellaneous Application (DC)",
+    "caseStatus": "Disposed",
+    "caseDetails": "-"
   },
   {
-    "parties": "Sunita Devi vs. Rajesh",
-    "court": "Family Court",
-    "judge": "Hon'ble Family Court Judge",
-    "caseType": "Divorce Petition",
-    "caseDetails": "Hindu Marriage Act - 13"
-  },
-  {
-    "parties": "Ravi Kumar vs. Suman",
-    "court": "Civil Court",
-    "judge": "Hon'ble Civil Judge",
-    "caseType": "Property Dispute",
-    "caseDetails": "Transfer of Property Act"
-  },
-  {
-    "parties": "Priya Singh vs. Anil",
-    "court": "Chief Judicial Magistrate",
-    "judge": "Hon'ble Judicial Magistrate Court No. 01",
-    "caseType": "Maintenance Case",
-    "caseDetails": "CrPC 125"
-  },
-  {
-    "parties": "Deepak Joshi vs. State",
-    "court": "Sessions Court",
-    "judge": "Hon'ble Sessions Judge",
+    "parties": "Rajkumar Urf Raja Vs. State Government",
+    "court": "Khatima Additional District Judge",
+    "judge": "Hon'ble Additional District Judge Khatima",
     "caseType": "Bail Application",
-    "caseDetails": "NDPS Act"
+    "caseStatus": "Disposed",
+    "caseDetails": "-"
   },
   {
-    "parties": "Kavita vs. Manoj",
-    "court": "Family Court",
-    "judge": "Hon'ble Family Court Judge",
-    "caseType": "Child Custody",
-    "caseDetails": "Guardians and Wards Act"
-  },
-  {
-    "parties": "Suresh Chandra vs. State",
-    "court": "High Court",
-    "judge": "Hon'ble High Court Judge",
-    "caseType": "Writ Petition",
-    "caseDetails": "Article 226"
-  },
-  {
-    "parties": "Meena Kumari vs. Rakesh",
-    "court": "District Court",
-    "judge": "Hon'ble District Judge",
-    "caseType": "Domestic Violence",
-    "caseDetails": "Protection of Women from Domestic Violence Act"
-  },
-  {
-    "parties": "Vikas vs. State",
-    "court": "Sessions Court",
-    "judge": "Hon'ble Sessions Judge",
-    "caseType": "Criminal Revision",
-    "caseDetails": "IPC 379, 411"
-  },
-  {
-    "parties": "Anita vs. Sandeep",
-    "court": "Family Court",
-    "judge": "Hon'ble Family Court Judge",
-    "caseType": "Restitution of Conjugal Rights",
-    "caseDetails": "Hindu Marriage Act - 9"
-  },
-  {
-    "parties": "Rohit vs. State",
-    "court": "District Court",
-    "judge": "Hon'ble District Judge",
-    "caseType": "Cheque Bounce",
-    "caseDetails": "NI Act 138"
-  },
-  {
-    "parties": "Pooja vs. Ramesh",
-    "court": "Family Court",
-    "judge": "Hon'ble Family Court Judge",
-    "caseType": "Alimony",
-    "caseDetails": "Hindu Marriage Act - 25"
-  },
-  {
-    "parties": "Sanjay vs. State",
-    "court": "Sessions Court",
-    "judge": "Hon'ble Sessions Judge",
+    "parties": "Jitendra Singh Rana Vs. State Government And Others",
+    "court": "Khatima Additional District Judge",
+    "judge": "Hon'ble Additional District Judge Khatima",
     "caseType": "Criminal Appeal",
-    "caseDetails": "IPC 302"
+    "caseStatus": "Pending",
+    "caseDetails": "-"
   },
   {
-    "parties": "Neha vs. Ajay",
-    "court": "Civil Court",
-    "judge": "Hon'ble Civil Judge",
-    "caseType": "Partition Suit",
-    "caseDetails": "Partition Act"
+    "parties": "Harish Chand Saroj And Others Vs. Rohit",
+    "court": "Khatima Additional District Judge",
+    "judge": "Hon'ble Additional District Judge Khatima",
+    "caseType": "Civil Appeal",
+    "caseStatus": "Disposed",
+    "caseDetails": "-"
   },
   {
-    "parties": "Manoj vs. State",
-    "court": "High Court",
-    "judge": "Hon'ble High Court Judge",
-    "caseType": "Public Interest Litigation",
-    "caseDetails": "Article 32"
+    "parties": "Bhagwan Singh Vs. Shyam Singh And Others",
+    "court": "Khatima Additional District Judge",
+    "judge": "Hon'ble Additional District Judge Khatima",
+    "caseType": "Civil Appeal",
+    "caseStatus": "Disposed",
+    "caseDetails": "-"
   },
   {
-    "parties": "Ritu vs. Saurabh",
-    "court": "Family Court",
-    "judge": "Hon'ble Family Court Judge",
-    "caseType": "Child Adoption",
-    "caseDetails": "Juvenile Justice Act"
+    "parties": "Naresh Bhatt Vs. State Government And Others",
+    "court": "Khatima Additional District Judge",
+    "judge": "Hon'ble Additional District Judge Khatima",
+    "caseType": "Criminal Appeal",
+    "caseStatus": "Pending",
+    "caseDetails": "-"
   },
   {
-    "parties": "Arun vs. State",
-    "court": "District Court",
-    "judge": "Hon'ble District Judge",
-    "caseType": "Land Dispute",
-    "caseDetails": "Land Revenue Act"
+    "parties": "Vipin Singh Rana Vs. State Gov.",
+    "court": "Khatima Additional District Judge",
+    "judge": "Hon'ble Additional District Judge Khatima",
+    "caseType": "Criminal Appeal",
+    "caseStatus": "Disposed",
+    "caseDetails": "-"
   },
   {
-    "parties": "Seema vs. Mahesh",
-    "court": "Family Court",
-    "judge": "Hon'ble Family Court Judge",
-    "caseType": "Dowry Harassment",
-    "caseDetails": "Dowry Prohibition Act"
+    "parties": "State Gov. Vs. Kirpal Singh @ Gorcha",
+    "court": "Khatima Additional District Judge",
+    "judge": "Hon'ble Additional District Judge Khatima",
+    "caseType": "Sessions Case",
+    "caseStatus": "Disposed",
+    "caseDetails": "-"
   },
   {
-    "parties": "Vivek vs. State",
-    "court": "Sessions Court",
-    "judge": "Hon'ble Sessions Judge",
-    "caseType": "Attempt to Murder",
-    "caseDetails": "IPC 307"
+    "parties": "Sarita Vs. Jyoti And Others",
+    "court": "Khatima Additional District Judge",
+    "judge": "Hon'ble Additional District Judge Khatima",
+    "caseType": "Criminal Revision",
+    "caseStatus": "Disposed",
+    "caseDetails": "-"
+  },
+  {
+    "parties": "State Government Vs. Gopal Vishwas",
+    "court": "Khatima Additional District Judge",
+    "judge": "Hon'ble Additional District Judge Khatima",
+    "caseType": "Sessions Case",
+    "caseStatus": "Disposed",
+    "caseDetails": "-"
+  },
+  {
+    "parties": "Vikramjeet Singh And Others Vs. Simaranjeet Kaur And Others",
+    "court": "Khatima Additional District Judge",
+    "judge": "Hon'ble Additional District Judge Khatima",
+    "caseType": "Criminal Appeal",
+    "caseStatus": "Disposed",
+    "caseDetails": "-"
+  },
+  {
+    "parties": "Sukhdev Singh Vs. Virendra Singh And Others",
+    "court": "Khatima Additional District Judge",
+    "judge": "Hon'ble Additional District Judge Khatima",
+    "caseType": "Civil Appeal",
+    "caseStatus": "Disposed",
+    "caseDetails": "-"
+  },
+  {
+    "parties": "Basant Ballabh Vs. Yogita Bhatt And Others",
+    "court": "Khatima Additional District Judge",
+    "judge": "Hon'ble Additional District Judge Khatima",
+    "caseType": "Criminal Appeal",
+    "caseStatus": "Disposed",
+    "caseDetails": "-"
+  },
+  {
+    "parties": "Abrar Ahmad And Others Vs. State Government",
+    "court": "Khatima Additional District Judge",
+    "judge": "Hon'ble Additional District Judge Khatima",
+    "caseType": "Civil Revision",
+    "caseStatus": "Disposed",
+    "caseDetails": "-"
+  },
+  {
+    "parties": "Chanchal Singh & Anr. Vs. State",
+    "court": "High Court of Uttarakhand",
+    "judge": "Hon'ble B. C. Kandpal",
+    "caseType": "Bail Application",
+    "caseStatus": "Disposed",
+    "caseDetails": "Miscellaneous Section"
+  },
+  {
+    "parties": "State Government Vs. Hasim",
+    "court": "Khatima Additional District Judge",
+    "judge": "Hon'ble Additional District Judge Khatima",
+    "caseType": "Sessions Case",
+    "caseStatus": "Pending",
+    "caseDetails": "Arms Act - 25(1-B)A"
+  },
+  {
+    "parties": "State Vs. Chanchal Singh",
+    "court": "High Court of Uttarakhand",
+    "judge": "Hon'ble J. C. S. Rawat",
+    "caseType": "Civil Miscellaneous Application",
+    "caseStatus": "Disposed",
+    "caseDetails": "Miscellaneous Section"
+  },
+  {
+    "parties": "State Government Vs. Sarabjeet Singh And Others",
+    "court": "Khatima Additional District Judge",
+    "judge": "Hon'ble Additional District Judge Khatima",
+    "caseType": "Sessions Case",
+    "caseStatus": "Pending",
+    "caseDetails": "-"
+  },
+  {
+    "parties": "Gurmeet Singh Vs. State Of Uttarakhand",
+    "court": "High Court of Uttarakhand - Single Bench",
+    "judge": "Hon'ble Alok Kumar Verma",
+    "caseType": "Criminal Revision",
+    "caseStatus": "Disposed",
+    "caseDetails": "Application under Section 482 CrPC"
   }
 ]

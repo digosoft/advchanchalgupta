@@ -3,7 +3,7 @@
   font-size: 13px;
 }
 #casesTable td {
-  padding: 5px;
+  padding: 10px;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
