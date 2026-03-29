@@ -1,5 +1,5 @@
 // This script fetches cases.json and renders the cases in the table with pagination
-const PAGE_SIZE = 10;
+const PAGE_SIZE = 25;
 let casesData = [];
 let currentPage = 1;
 
