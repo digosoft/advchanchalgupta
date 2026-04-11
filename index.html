@@ -27,6 +27,85 @@
   transform: scale(1.04);
   box-shadow: 0 4px 24px rgba(212,175,95,0.18);
 }
+/* Uniform gallery image sizing */
+.gallery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+/* Simple custom lightbox */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+  z-index: 9999;
+}
+.lightbox-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+.lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+}
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lightbox-image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.45);
+}
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.lightbox-close {
+  top: -48px;
+  right: 0;
+}
+.lightbox-prev {
+  left: -52px;
+}
+.lightbox-next {
+  right: -52px;
+}
+@media (max-width: 600px) {
+  .gallery-grid img {
+    height: 190px;
+  }
+  .lightbox-prev {
+    left: 8px;
+  }
+  .lightbox-next {
+    right: 8px;
+  }
+}
 </style>
 </head>
 <body>
@@ -285,10 +364,10 @@
       <p class="sec-desc">A glimpse into our professional journey and memorable moments at Khatima Family Court.</p>
     </div>
     <div class="gallery-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;margin-top:2rem;">
-        <!--<a href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" class="glightbox" data-gallery="cgallery"><img src="img/adv chancalgupta.jpg" alt="Khatima Family Court Lawyer" style="width:100%;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.10);"/></a>
-     <a href="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80" class="glightbox" data-gallery="cgallery"><img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Gallery Image 2" style="width:100%;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.10);"/></a>
-      <a href="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" class="glightbox" data-gallery="cgallery"><img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Gallery Image 3" style="width:100%;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.10);"/></a>
-      <a href="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80" class="glightbox" data-gallery="cgallery"><img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80" alt="Gallery Image 4" style="width:100%;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.10);"/></a> -->
+      <a href="img/mam.jpeg" class="glightbox" data-gallery="cgallery"><img src="img/mam.jpeg" alt="Advocate Dr Chanchal Singh senior family court lawyer Khatima" style="width:100%;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.10);"/></a>
+      <a href="img/court.jpeg" class="glightbox" data-gallery="cgallery"><img src="img/court.jpeg" alt="Khatima family court building Uttarakhand civil criminal matters" style="width:100%;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.10);"/></a>
+      <a href="img/team.png" class="glightbox" data-gallery="cgallery"><img src="img/team.png" alt="Legal team of Advocate Chanchal Singh Khatima family court" style="width:100%;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.10);"/></a>
+      <a href="img/suprem court.png" class="glightbox" data-gallery="cgallery"><img src="img/suprem court.png" alt="Supreme Court of India legal reference for Khatima cases" style="width:100%;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.10);"/></a>
     </div>
   </div>
 </section>
@@ -373,28 +452,48 @@
         <h3>📋 Consultation Inquiry Form</h3>
         <p>Fill in your details below — your information is safe and confidential.</p>
       </div>
-      <!-- ═══ GOOGLE FORM EMBED ═══
-           Replace the src URL below with your own Google Form embed URL.
-           To get it: Google Forms → Send → Embed → Copy iframe src URL
-           Demo form shown below (replace with real form URL after creating it) -->
-      <iframe
-        class="gframe"
-        src="https://forms.gle/mVJ7mTyvsNkFpFVz8"
-        title="Consultation Inquiry Form – Advocate Chanchal Singh"
-        loading="lazy">
-        Loading form…
-      </iframe>
-      <!-- FALLBACK if Google Form not yet set up -->
-      <div id="formFallback" style="display:none;padding:2rem">
-        <p style="font-size:.85rem;color:var(--muted);margin-bottom:1.5rem;text-align:center">📝 To set up the Google Form:<br/>1. Go to <strong style="color:var(--gold2)">forms.google.com</strong><br/>2. Create your inquiry form<br/>3. Click Send → Embed → Copy the iframe src URL<br/>4. Replace the src in the HTML above</p>
-        <div style="display:flex;flex-direction:column;gap:1rem;padding:1.5rem;background:var(--card);border-radius:12px;border:1px solid var(--border)">
-          <div><label style="font-size:.78rem;color:var(--muted);display:block;margin-bottom:.4rem">Your Name</label><input type="text" placeholder="Full Name" style="width:100%;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;padding:.7rem 1rem;color:var(--white);font-family:'Outfit',sans-serif;font-size:.88rem;outline:none"/></div>
-          <div><label style="font-size:.78rem;color:var(--muted);display:block;margin-bottom:.4rem">Phone Number</label><input type="tel" placeholder="+91 XXXXXXXXXX" style="width:100%;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;padding:.7rem 1rem;color:var(--white);font-family:'Outfit',sans-serif;font-size:.88rem;outline:none"/></div>
-          <div><label style="font-size:.78rem;color:var(--muted);display:block;margin-bottom:.4rem">Case Type</label><select style="width:100%;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:.7rem 1rem;color:var(--white);font-family:'Outfit',sans-serif;font-size:.88rem;outline:none"><option value="">Select Case Type</option><option>Divorce / Separation</option><option>Child Custody</option><option>Maintenance / Alimony</option><option>Domestic Violence</option><option>Matrimonial Rights</option><option>Legal Consultation</option></select></div>
-          <div><label style="font-size:.78rem;color:var(--muted);display:block;margin-bottom:.4rem">Your Message</label><textarea rows="3" placeholder="Briefly describe your situation (confidential)..." style="width:100%;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;padding:.7rem 1rem;color:var(--white);font-family:'Outfit',sans-serif;font-size:.88rem;outline:none;resize:vertical"></textarea></div>
-          <button onclick="submitFallback()" style="background:linear-gradient(135deg,var(--gold3),var(--gold2));color:var(--ink);border:none;border-radius:40px;padding:.85rem;font-family:'Outfit',sans-serif;font-weight:700;font-size:.9rem;cursor:pointer;transition:all .3s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">⚖ Send via WhatsApp</button>
+      <form id="inquiryForm" style="display:flex;flex-direction:column;gap:1rem;padding:1.5rem;background:var(--card);border-radius:12px;border:1px solid var(--border)">
+        <div>
+          <label for="inq_name" style="font-size:.78rem;color:var(--muted);display:block;margin-bottom:.4rem">Your Name</label>
+          <input id="inq_name" name="user_name" type="text" placeholder="Full Name" required style="width:100%;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;padding:.7rem 1rem;color:var(--white);font-family:'Outfit',sans-serif;font-size:.88rem;outline:none"/>
         </div>
-      </div>
+        <div>
+          <label for="inq_phone" style="font-size:.78rem;color:var(--muted);display:block;margin-bottom:.4rem">Phone Number</label>
+          <input id="inq_phone" name="user_phone" type="tel" placeholder="+91 XXXXXXXXXX" required style="width:100%;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;padding:.7rem 1rem;color:var(--white);font-family:'Outfit',sans-serif;font-size:.88rem;outline:none"/>
+        </div>
+        <div>
+          <label for="inq_city" style="font-size:.78rem;color:var(--muted);display:block;margin-bottom:.4rem">City / Location</label>
+          <input id="inq_city" name="city_location" type="text" placeholder="City / Town (e.g., Khatima)" style="width:100%;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;padding:.7rem 1rem;color:var(--white);font-family:'Outfit',sans-serif;font-size:.88rem;outline:none"/>
+        </div>
+        <div>
+          <label for="inq_status" style="font-size:.78rem;color:var(--muted);display:block;margin-bottom:.4rem">Case Status</label>
+          <select id="inq_status" name="case_status" style="width:100%;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:.7rem 1rem;color:var(--white);font-family:'Outfit',sans-serif;font-size:.88rem;outline:none">
+            <option value="">Select Case Status</option>
+            <option>New / Not Filed</option>
+            <option>Pending in Court</option>
+            <option>Appeal / Revision</option>
+            <option>Execution / Enforcement</option>
+          </select>
+        </div>
+        <div>
+          <label for="inq_case" style="font-size:.78rem;color:var(--muted);display:block;margin-bottom:.4rem">Case Type</label>
+          <select id="inq_case" name="case_type" style="width:100%;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:.7rem 1rem;color:var(--white);font-family:'Outfit',sans-serif;font-size:.88rem;outline:none">
+            <option value="">Select Case Type</option>
+            <option>Divorce / Separation</option>
+            <option>Child Custody</option>
+            <option>Maintenance / Alimony</option>
+            <option>Domestic Violence</option>
+            <option>Matrimonial Rights</option>
+            <option>Legal Consultation</option>
+          </select>
+        </div>
+        <div>
+          <label for="inq_message" style="font-size:.78rem;color:var(--muted);display:block;margin-bottom:.4rem">Your Message</label>
+          <textarea id="inq_message" name="message" rows="3" placeholder="Briefly describe your situation (confidential)..." style="width:100%;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;padding:.7rem 1rem;color:var(--white);font-family:'Outfit',sans-serif;font-size:.88rem;outline:none;resize:vertical"></textarea>
+        </div>
+        <button type="submit" style="background:linear-gradient(135deg,var(--gold3),var(--gold2));color:var(--ink);border:none;border-radius:40px;padding:.85rem;font-family:'Outfit',sans-serif;font-weight:700;font-size:.9rem;cursor:pointer;transition:all .3s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">⚖ Send Request</button>
+        <p id="formStatus" style="font-size:.8rem;margin-top:.3rem;color:var(--muted);"></p>
+      </form>
     </div>
     <p style="font-size:.72rem;color:var(--muted);margin-top:.8rem;text-align:center">⚠ If the form doesn't load, call directly: <a href="tel:9917704716" style="color:var(--gold2)">9917704716</a> or <a href="https://wa.me/919917704716" target="_blank" style="color:var(--gold2)">WhatsApp</a></p>
   </div>
@@ -482,17 +581,10 @@
 </footer>
 
 <a href="#home" id="scrollTop" aria-label="Back to top">↑</a>
-
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script>
 // Preloader
 window.addEventListener('load',()=>setTimeout(()=>document.getElementById('preloader').classList.add('done'),1900));
-// Check if Google Form loads, show fallback if needed
-const gframe = document.querySelector('.gframe');
-if(gframe){
-  gframe.addEventListener('error',()=>{ gframe.style.display='none'; document.getElementById('formFallback').style.display='block'; });
-  // Check if demo URL - show fallback for demo
-  if(gframe.src.includes('DEMO_FORM_ID')){ setTimeout(()=>{ gframe.style.display='none'; document.getElementById('formFallback').style.display='block'; },2000); }
-}
 // Navbar
 const nav=document.getElementById('navbar');
 window.addEventListener('scroll',()=>{ nav.classList.toggle('solid',scrollY>60); document.getElementById('scrollTop').classList.toggle('show',scrollY>500); });
@@ -520,7 +612,93 @@ document.querySelectorAll('.faq-q').forEach(q=>{ q.addEventListener('click',()=>
 // Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(a=>{ a.addEventListener('click',function(e){ const t=document.querySelector(this.getAttribute('href')); if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});} }); });
 // Fallback form submit
-function submitFallback(){ const inputs=document.querySelectorAll('#formFallback input,#formFallback textarea,#formFallback select'); const name=inputs[0]?.value||''; const phone=inputs[1]?.value||''; const ctype=inputs[2]?.value||''; const msg=inputs[3]?.value||''; if(!name||!phone){alert('Please enter your name and phone number.');return;} const text=encodeURIComponent(`*Consultation Request*\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Case Type:* ${ctype||'Not specified'}\n*Details:* ${msg||'No details'}`); window.open(`https://wa.me/919917704716?text=${text}`,'_blank'); }
+// EmailJS form submit
+(function(){
+  if(window.emailjs){
+    emailjs.init('uHc8FYVC8Twtfu-vhZBWk');
+  }
+  const form=document.getElementById('inquiryForm');
+  if(!form)return;
+  const statusEl=document.getElementById('formStatus');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    const formData=new FormData(form);
+    const name=(formData.get('user_name')||'').toString().trim();
+    const phone=(formData.get('user_phone')||'').toString().trim();
+    if(!name||!phone){
+      if(statusEl){statusEl.textContent='Please enter your name and phone number.';statusEl.style.color='#f56565';}
+      return;
+    }
+    if(!window.emailjs){
+      if(statusEl){statusEl.textContent='Unable to send right now. Please call or WhatsApp.';statusEl.style.color='#f56565';}
+      return;
+    }
+    const serviceID='service_mm7aytn';
+    const templateID='template_6wxsdqd';
+    if(statusEl){statusEl.textContent='Sending your request...';statusEl.style.color='var(--muted)';}
+    emailjs.send(serviceID,templateID,{
+      user_name:name,
+      user_phone:phone,
+      city_location:(formData.get('city_location')||'').toString(),
+      case_status:(formData.get('case_status')||'').toString(),
+      case_type:(formData.get('case_type')||'').toString(),
+      message:(formData.get('message')||'').toString()
+    }).then(function(){
+      if(statusEl){statusEl.textContent='Thank you. Your consultation request has been sent.';statusEl.style.color='#48bb78';}
+      form.reset();
+    },function(err){
+      console.error('EmailJS error',err);
+      if(statusEl){statusEl.textContent='Could not send right now. Please try again or call directly.';statusEl.style.color='#f56565';}
+    });
+  });
+})();
+
+// Simple lightbox for gallery
+(function(){
+  const links=Array.from(document.querySelectorAll('.gallery-grid .glightbox'));
+  if(!links.length)return;
+  let currentIndex=0;
+  let overlay, imgEl;
+
+  function buildOverlay(){
+    overlay=document.createElement('div');
+    overlay.className='lightbox-overlay';
+    overlay.innerHTML='<div class="lightbox-backdrop"></div><div class="lightbox-content"><button type="button" class="lightbox-close" aria-label="Close">×</button><button type="button" class="lightbox-prev" aria-label="Previous">‹</button><img class="lightbox-image" alt="Gallery image enlarged"/><button type="button" class="lightbox-next" aria-label="Next">›</button></div>';
+    document.body.appendChild(overlay);
+    imgEl=overlay.querySelector('.lightbox-image');
+    overlay.querySelector('.lightbox-close').addEventListener('click',closeLb);
+    overlay.querySelector('.lightbox-backdrop').addEventListener('click',closeLb);
+    overlay.querySelector('.lightbox-prev').addEventListener('click',()=>change(-1));
+    overlay.querySelector('.lightbox-next').addEventListener('click',()=>change(1));
+    document.addEventListener('keydown',e=>{
+      if(!overlay.classList.contains('show'))return;
+      if(e.key==='Escape')closeLb();
+      if(e.key==='ArrowRight')change(1);
+      if(e.key==='ArrowLeft')change(-1);
+    });
+  }
+  function openLb(index){
+    if(!overlay)buildOverlay();
+    currentIndex=index;
+    const link=links[currentIndex];
+    const href=link.getAttribute('href')||link.querySelector('img').src;
+    imgEl.src=href;
+    overlay.classList.add('show');
+  }
+  function closeLb(){
+    if(overlay)overlay.classList.remove('show');
+  }
+  function change(dir){
+    currentIndex=(currentIndex+dir+links.length)%links.length;
+    openLb(currentIndex);
+  }
+  links.forEach((a,i)=>{
+    a.addEventListener('click',e=>{
+      e.preventDefault();
+      openLb(i);
+    });
+  });
+})();
 </script>
 </script>
 <!-- WhatsApp Chat Button -->
